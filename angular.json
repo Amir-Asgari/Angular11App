@@ -28,11 +28,9 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "./Angular11App\node_modules\bootstrapdistcss\bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "./Angular11App\node_modules\bootstrapdistjs\bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -96,11 +94,9 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "./Angular11App\node_modules\bootstrapdistcss\bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "./Angular11App\node_modules\bootstrapdistjs\bootstrap.min.js"
             ]
           }
         }

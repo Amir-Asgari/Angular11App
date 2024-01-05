@@ -1,0 +1,105 @@
+.widthBanner {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: -10;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+.changelanguage {
+    position: absolute;
+    top: 90px;
+    right: 2px;
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    width: 80px;
+    height: 25px;
+    border-radius: 12px;
+    color: #7a90aa;
+    background-color: #e9edf5;
+    cursor: pointer;
+    justify-content: space-around;
+    z-index: 10px;
+    box-sizing: border-box;
+}
+
+.withBanner {
+    display: flex;
+    height: inherit;
+    box-sizing: border-box;
+}
+
+.withBanner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    flex-grow: 0.2;
+
+
+    @media (min-width:1200px) {
+        align-items: flex-end;
+
+    }
+}
+
+.withBanner-banner {
+    // background-color: aqua;
+    display: flex;
+    flex-grow: 0.8;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    // border: solid black 1px;
+    height: 100vh;
+}
+
+.c-banners {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(158.26% 311.82% at -14.96% -37.8%,
+            rgb(255, 255, 255) 36%,
+            rgb(252, 254, 254) 51%,
+            rgb(245, 252, 252) 58%,
+            rgb(231, 248, 248) 64%,
+            rgb(212, 243, 243) 68%,
+            rgb(188, 237, 237) 73%,
+            rgb(158, 228, 228) 77%,
+            rgb(122, 219, 219) 80%,
+            rgb(80, 207, 207) 84%,
+            rgb(35, 195, 195) 87%,
+            rgb(0, 186, 186) 89%);
+}
+
+.banner-box {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 368px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 30px;
+
+    @media (min-width: 1200px) {
+        margin-left: -184px;
+    }
+}

@@ -1,0 +1,53 @@
+<style>
+    .body {
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      flex-direction: column;
+    }
+  
+    .button {
+      margin: 10px;
+      width: 110px;
+      height: 35px;
+      background-color: rgb(37, 231, 37);
+      color: white;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: white;
+      color: rgb(37, 231, 37);
+    }
+    .text {
+      margin: 20px;
+    }
+    p {
+      color: rgb(37, 51, 30);
+      margin: 10px;
+      font-weight: 500;
+      font-size: x-large;
+    }
+    span {
+      color: rgb(76, 72, 72);
+      font-style: italic;
+      font-size: medium;
+    }
+  </style>
+
+<div class="body">
+    <h1>click on the button to see the result</h1>
+    <button (click)="sendHttpRequest()" class="button">HTTP request</button>
+    <div class="text" *ngIf="responseData">
+      <p>
+        User ID: <span class="span">{{ responseId }}</span>
+      </p>
+      <p>
+        Body: <span class="span"> {{ responseBody }}</span>
+      </p>
+      <p>
+        data: <span class="span">{{ responseData }}</span>
+      </p>
+    </div>
+  </div>
