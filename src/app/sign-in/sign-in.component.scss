@@ -219,3 +219,34 @@
         width: 100%;
     }
   
+    .ar-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .ar-icon-img{
+        background-color: #d1dbe88c;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .terms{
+        font-size: 10px;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .terms a{
+        color: #32b0f6;
+        text-decoration: none;
+    }
+
+    @media (max-width: 1200px) {
+        .withBanner-banner {
+          display: none;
+        }
+      }
