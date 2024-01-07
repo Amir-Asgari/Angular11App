@@ -9,7 +9,6 @@ import { HttpClient } from '@angular/common/http';
 export class HTTPComponent implements OnInit {
 
   responseData : String |undefined
-
   responseId: string | undefined;
   responseBody: string | undefined;
 
@@ -24,7 +23,6 @@ export class HTTPComponent implements OnInit {
           this.responseId = id;
           this.responseBody = body;
           // console.log(data);
-          
         },
         (error) => {
           console.error('Error', error);
