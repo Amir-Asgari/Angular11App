@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-in',
@@ -18,16 +19,27 @@ export class SignInComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
   logincheck() {
-    this.http.get('https://jsonplaceholder.typicode.com/posts/2').subscribe(
-      ({ title, id, body }: any) => {
-        this.responseData = title;
-        this.responseBody = body;
-        this.responseId = id;
-      },
-      (error) => {
-        console.log('Error', error);
-      }
-    );
+    this.http
+      .post('https://api.irannara.com/api/v1/Account/UserPassLogin', {
+        username: this.username,
+        password: this.password,
+      })
+      .subscribe(
+        ({ title, id, body , password , username}: any) => {
+          this.responseData = title;
+          this.responseBody = body;
+          this.responseId = id;
+          this.password= password;
+          this.username= username;
+
+          console.log(this.responseData);
+          console.log(this.username);
+        },
+        
+        (error) => {
+          console.log('Error', error);
+        }
+      );
   }
 
   ngOnInit(): void {}

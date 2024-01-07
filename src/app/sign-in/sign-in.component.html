@@ -15,8 +15,8 @@
         <div class="form-title">ورود</div>
         <div class="login">
           <div class="login-input">
-            <input placeholder="نشانی ایمیل" />
-            <input placeholder="رمز" />
+            <input [(ngModel)]="username" placeholder="نام کاربری" />
+            <input [(ngModel)]="password" placeholder="رمز" />
             <button class="button-enter" (click)="logincheck()">ورود</button>
             <p>Title :{{responseData}} </p>
             <div class="question-p">
