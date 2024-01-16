@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HTTPComponent } from './http/http.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { FormsModule } from '@angular/forms';
+import { CoreRoutingModule } from './core/core-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CoreRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
