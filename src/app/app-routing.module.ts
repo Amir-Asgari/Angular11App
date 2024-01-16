@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './main/main.component';
-import { HomeComponent } from './home/home.component';
+import { MainComponent } from './core/main/main.component';
+import { HomeComponent } from './core/home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { SignInComponent } from './core/sign-in/sign-in.component';
 
 const routes: Routes = [
   // { path: '', component: MainComponent },

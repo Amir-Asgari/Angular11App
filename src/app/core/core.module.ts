@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CoreRoutingModule } from './core-routing.module';
-import { SignInComponent } from '../sign-in/sign-in.component';
-import { HTTPComponent } from '../http/http.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { HTTPComponent } from './http/http.component';
 import { ContactComponent } from '../contact/contact.component';
-import { HomeComponent } from '../home/home.component';
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from '../about/about.component';
-import { MainComponent } from '../main/main.component';
+import { MainComponent } from './main/main.component';
 import { AppComponent } from '../app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
