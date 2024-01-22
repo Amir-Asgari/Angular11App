@@ -14,6 +14,10 @@ export class AppComponent {
 
   constructor(private http: HttpClient) {}
 
+  toggleNavbar(){
+    console.log("toggleNavbar");
+    
+  }
   sendHttpRequest() {
     this.http.get('https://jsonplaceholder.typicode.com/posts/1').subscribe(
       // (data: any) => {
