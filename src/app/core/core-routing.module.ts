@@ -5,13 +5,16 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from '../contact/contact.component';
 import { AboutComponent } from '../about/about.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
+import { AuthGuard } from '../auth.guard';
 
 const routes: Routes = [
   { path: '', component: MainComponent},
   { path: 'home', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ContactComponent , canActivate:[AuthGuard] },
   { path: 'about', component: AboutComponent },
   { path: 'signIn', component: SignInComponent },
+  { path: 'notAuthorized', component: NotAuthorizedComponent },
   
 ];
 
